@@ -8,4 +8,8 @@
     <string name="calories_100">Calories: 100</string>
     <string name="burger">Burger</string>
     <string name="calories_500">Calories: 500</string>
+    <string name="favoritessssss_fragment">favoritessssss_fragment</string>
+    <string name="add_comment">add comment</string>
+    <string name="add_comment1">add comment</string>
+    <string name="recipe_details">Recipe Details</string>
 </resources>

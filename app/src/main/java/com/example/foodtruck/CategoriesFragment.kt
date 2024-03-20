@@ -1,12 +1,16 @@
 package com.example.foodtruck
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 // Rename parameter arguments, choose names that match
@@ -32,6 +36,7 @@ class CategoriesFragment : Fragment() {
         }
     }
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -55,7 +60,45 @@ class CategoriesFragment : Fragment() {
             startActivity(intent)
         }
 
+        // Find the add comment button in the first card and set OnClickListener
+        val addCommentButton = view.findViewById<Button>(R.id.showPopupButton)
+        addCommentButton.setOnClickListener {
+            // Show a popup dialog to add a comment
+            showAddCommentDialog()
+        }
+
+        // Find the add comment button in the second card and set OnClickListener
+        val secondAddCommentButton = view.findViewById<Button>(R.id.showPopupButton1)
+        secondAddCommentButton.setOnClickListener {
+            // Show a popup dialog to add a comment
+            showAddCommentDialog()
+        }
+
         return view
+    }
+
+    private fun showAddCommentDialog() {
+        val builder = AlertDialog.Builder(requireContext())
+        builder.setTitle("Add Comment")
+
+        // Set up the input
+        val input = EditText(requireContext())
+        val lp = ViewGroup.LayoutParams(
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.MATCH_PARENT
+        )
+        input.layoutParams = lp
+        builder.setView(input)
+
+        // Set up the buttons
+        builder.setPositiveButton("Commit") { dialog, which ->
+            val commentText = input.text.toString()
+            // Perform action with the comment text (e.g., save it)
+            // You can handle the comment text here
+        }
+        builder.setNegativeButton("Cancel") { dialog, which -> dialog.cancel() }
+
+        builder.show()
     }
 
     companion object {

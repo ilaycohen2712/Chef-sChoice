@@ -26,9 +26,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:cardStrokeWidth="5dp"
-            app:cardStrokeColor="@android:color/black">
+            android:orientation="vertical">
 
             <!-- Recipe Image -->
             <ImageView
@@ -59,6 +57,12 @@
                 android:text="@string/calories_100"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+            <Button
+                android:id="@+id/showPopupButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/add_comment" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -72,9 +76,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:cardStrokeWidth="5dp"
-            app:cardStrokeColor="@android:color/black">
+            android:orientation="vertical">
 
             <!-- Recipe Image -->
             <ImageView
@@ -105,6 +107,12 @@
                 android:text="@string/calories_500"
                 android:textSize="18sp"
                 android:textStyle="bold" />
+            <Button
+                android:id="@+id/showPopupButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/add_comment1" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     <!-- Add more recipe cards here as needed -->
