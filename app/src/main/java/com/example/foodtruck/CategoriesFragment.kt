@@ -1,12 +1,15 @@
 package com.example.foodtruck
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 
-// TODO: Rename parameter arguments, choose names that match
+// Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
@@ -17,7 +20,7 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class CategoriesFragment : Fragment() {
-    // TODO: Rename and change types of parameters
+    // Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
@@ -34,7 +37,25 @@ class CategoriesFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_categories, container, false)
+        val view = inflater.inflate(R.layout.fragment_categories, container, false)
+
+        // Find the first recipe image view and set OnClickListener
+        val recipeImageView = view.findViewById<ImageView>(R.id.recipeImageView)
+        recipeImageView.setOnClickListener {
+            // Launch the activity for the first recipe details
+            val intent = Intent(requireContext(), RecipeDetailsActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Find the second recipe image view and set OnClickListener
+        val secondImageView = view.findViewById<ImageView>(R.id.secondImage)
+        secondImageView.setOnClickListener {
+            // Launch the activity for the second recipe details
+            val intent = Intent(requireContext(), SecondRecipeDetailsActivity::class.java)
+            startActivity(intent)
+        }
+
+        return view
     }
 
     companion object {
@@ -46,7 +67,7 @@ class CategoriesFragment : Fragment() {
          * @param param2 Parameter 2.
          * @return A new instance of fragment CategoriesFragment.
          */
-        // TODO: Rename and change types and number of parameters
+        // Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             CategoriesFragment().apply {
@@ -55,5 +76,21 @@ class CategoriesFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+}
+
+class SecondRecipeDetailsActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_second_recipe_details)
+        // Add your code here for SecondRecipeDetailsActivity
+    }
+}
+
+class RecipeDetailsActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_recipe_details)
+        // Add your code here for RecipeDetailsActivity
     }
 }

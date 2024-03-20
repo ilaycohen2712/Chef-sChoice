@@ -2,4 +2,10 @@
     <string name="app_name">foodtruck</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="all_recipes">All Recipes</string>
+    <string name="omlet_with_mushrooms">Omlet with mushrooms</string>
+    <string name="calories_100">Calories: 100</string>
+    <string name="burger">Burger</string>
+    <string name="calories_500">Calories: 500</string>
 </resources>
