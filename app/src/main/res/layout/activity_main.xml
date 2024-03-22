@@ -29,4 +29,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/btm_menu" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wellcom to FoodTruck"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/host_fragment"
+        app:layout_constraintEnd_toEndOf="@+id/host_fragment"
+        app:layout_constraintStart_toStartOf="@+id/host_fragment"
+        app:layout_constraintTop_toTopOf="@+id/host_fragment" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
