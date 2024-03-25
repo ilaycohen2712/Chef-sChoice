@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -51,4 +52,9 @@ dependencies {
     implementation ("com.intuit.ssp:ssp-android:1.0.6")
 
     implementation ("pl.droidsonroids.gif:android-gif-drawable:1.2.17")
+    // Import the BoM for the Firebase platform
+    implementation(platform("com.google.firebase:firebase-bom:32.8.0"))
+
+
+    implementation("com.google.firebase:firebase-auth")
 }
