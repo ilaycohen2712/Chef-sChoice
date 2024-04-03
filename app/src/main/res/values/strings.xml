@@ -1,5 +1,39 @@
 <resources>
-    <string name="app_name">foodtruck</string>
+    <string name="app_name">Bali</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home" />
+    <string name="profile" />
+    <string name="home2" />
+    <string name="register">הרשמה</string>
+    <string name="fullName">שם מלא</string>
+    <string name="email">אימייל</string>
+    <string name="password">סיסמה</string>
+    <string name="registerBtn">הירשם</string>
+    <string name="LoginTitle">כניסה</string>
+    <string name="loginBtn">כניסה</string>
+    <string name="signUpLink">משתמש חדש?הירשם!</string>
+    <string name="loginLink">כבר יש לך משתמש? לחץ כאן!</string>
+    <string name="title_register">ברוכים הבאים,\nהרשמה</string>
+    <string name="title_login">ברוכים הבאים,\nכניסה</string>
+    <string name="profileTitle">פרופיל</string>
+    <string name="userFullName">דני הגבר</string>
+    <string name="userMail">danihagever@gmail.com</string>
+    <string name="btnLogoutText">התנתק</string>
+    <string name="edit_profile_dialog_title">עריכת פרופיל</string>
+    <string name="edit_profile_dialog_message">ערוך את פרטי הפרופיל שלך</string>
+    <string name="save">שמור</string>
+    <string name="cancel">בטל</string>
+    <string name="select_profile_pic_button_text">בחר תמונה</string>
+    <string name="profile_name_hint">שם מלא</string>
+    <string name="go_back"> חזור </string>
+    <string name="the_comment">the comment</string>
+    <string name="the_place_name">the place name</string>
+    <string name="my_comments">התגובות שלי</string>
+    <string name="delete_comment_button">delete comment</string>
+    <string name="edit_button_description">edit comment</string>
+    <string name="the_comment_field">תגובה</string>
+    <string name="edit_comment_dialog_title">עריכת תגובה</string>
+    <string name="edit_profile_description">a pencil icon edit</string>
+    <string name="for_background">for background</string>
 </resources>

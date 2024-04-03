@@ -1,23 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/homePageFragment">
 
     <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.example.foodtruck.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/placeFragment"
+        android:name="com.example.bali.places.PlaceFragment"
+        android:label="fragment_place"
+        tools:layout="@layout/fragment_place">
+        <action
+            android:id="@+id/action_placeFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+    </fragment>
     <fragment
-        android:id="@+id/favoritesFragment"
-        android:name="com.example.foodtruck.FavoritesFragment"
-        android:label="fragment_favorites"
-        tools:layout="@layout/fragment_favorites" />
+        android:id="@+id/profileFragment"
+        android:name="com.example.bali.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile"/>
+
     <fragment
-        android:id="@+id/categoriesFragment"
-        android:name="com.example.foodtruck.CategoriesFragment"
-        android:label="fragment_categories"
-        tools:layout="@layout/fragment_categories" />
+        android:id="@+id/homePageFragment"
+        android:name="com.example.bali.homePage.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page">
+
+        <action
+            android:id="@+id/action_homePageFragment_to_postFragment"
+            app:destination="@id/postFragment" />
+
+        <action
+            android:id="@+id/action_homePageFragment_to_commentsFragment"
+            app:destination="@id/commentsFragment" />
+
+        <!-- Any other actions -->
+    </fragment>
+
+    <fragment
+        android:id="@+id/postFragment"
+        android:name="com.example.bali.post.PostFragment"
+        android:label="fragment_post"
+        tools:layout="@layout/fragment_post" />
+
+    <fragment
+        android:id="@+id/commentsFragment"
+        android:name="com.example.bali.allPosts.CommentsFragment"
+        android:label="fragment_comments"
+        tools:layout="@layout/fragment_comments" />
+<!--    <fragment-->
+<!--        android:id="@+id/editCommentDialogFragment"-->
+<!--        android:name="com.example.bali.profile.EditCommentDialogFragment"-->
+<!--        android:label="fragment_edit_comment"-->
+<!--        tools:layout="@layout/fragment_edit_comment_dialog">-->
+<!--        <argument-->
+<!--            android:name="commentId"-->
+<!--            app:argType="string" />-->
+<!--    </fragment>-->
+
+<!--    <action-->
+<!--        android:id="@+id/action_profileFragment_to_editCommentDialogFragment"-->
+<!--        app:destination="@id/editCommentDialogFragment" />-->
+
 </navigation>
