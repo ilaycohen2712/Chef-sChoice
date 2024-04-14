@@ -10,7 +10,7 @@ import com.example.foodtruck.database.entities.Post
 import com.example.foodtruck.database.entities.User
 
 @Database(entities = [User::class, Place::class, Post::class], version = 7)
-abstract class BaliDatabase : RoomDatabase() {
+abstract class FoodTruckDatabase : RoomDatabase() {
     abstract fun userDao(): UserDao
     abstract fun placeDao(): PlaceDao
     abstract fun postDao(): PostDao

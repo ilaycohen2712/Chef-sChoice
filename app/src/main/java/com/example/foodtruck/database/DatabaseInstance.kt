@@ -6,13 +6,13 @@ import androidx.room.Room
 object DatabaseInstance {
 
     @Volatile
-    private var INSTANCE: BaliDatabase? = null
+    private var INSTANCE: FoodTruckDatabase? = null
 
-    fun getDatabase(context: Context): BaliDatabase {
+    fun getDatabase(context: Context): FoodTruckDatabase {
         return INSTANCE ?: synchronized(this) {
             val instance = Room.databaseBuilder(
                 context.applicationContext,
-                BaliDatabase::class.java,
+                FoodTruckDatabase::class.java,
                 "bali_database"
             )
                 .fallbackToDestructiveMigration()

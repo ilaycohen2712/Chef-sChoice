@@ -13,6 +13,7 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.activityViewModels
+import com.example.foodtruck.MainActivity
 import com.example.foodtruck.R
 import com.example.foodtruck.login.LoginActivity
 import com.example.foodtruck.login.UserCredentials
@@ -58,9 +59,10 @@ class SignUpFragment : Fragment() {
     private fun observeSignUpResult() {
         signUpViewModel.signUpResult.observe(viewLifecycleOwner) { result: String ->
             if (result == "Success") {
-//                findNavController().navigate(R.id.action_signupFragment_to_loginFragment)
+//               findNavController().navigate(R.id.action_signupFragment_to_loginFragment)
                 Toast.makeText(requireContext(), result, Toast.LENGTH_SHORT).show()
-
+//                //val intent = Intent(requireActivity(), MainActivity::class.java)
+//                //startActivity(intent)
             } else {
                 resetParameters()
 //                manageViews(

@@ -5,5 +5,5 @@
          <item name="colorPrimary">@color/my_light_primary</item>
     </style>
 
-    <style name="Theme.Bali" parent="Base.Theme.Foodtruck" />
+    <style name="Theme.Foodtruck" parent="Base.Theme.Foodtruck" />
 </resources>
