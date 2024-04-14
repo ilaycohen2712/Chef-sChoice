@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/placeFragment"
-        android:name="com.example.bali.places.PlaceFragment"
+        android:name="com.example.foodtruck.places.PlaceFragment"
         android:label="fragment_place"
         tools:layout="@layout/fragment_place">
         <action
@@ -15,13 +15,13 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.bali.profile.ProfileFragment"
+        android:name="com.example.foodtruck.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile"/>
 
     <fragment
         android:id="@+id/homePageFragment"
-        android:name="com.example.bali.homePage.HomePageFragment"
+        android:name="com.example.foodtruck.homePage.HomePageFragment"
         android:label="fragment_home_page"
         tools:layout="@layout/fragment_home_page">
 
@@ -38,18 +38,18 @@
 
     <fragment
         android:id="@+id/postFragment"
-        android:name="com.example.bali.post.PostFragment"
+        android:name="com.example.foodtruck.post.PostFragment"
         android:label="fragment_post"
         tools:layout="@layout/fragment_post" />
 
     <fragment
         android:id="@+id/commentsFragment"
-        android:name="com.example.bali.allPosts.CommentsFragment"
+        android:name="com.example.foodtruck.allPosts.CommentsFragment"
         android:label="fragment_comments"
         tools:layout="@layout/fragment_comments" />
 <!--    <fragment-->
 <!--        android:id="@+id/editCommentDialogFragment"-->
-<!--        android:name="com.example.bali.profile.EditCommentDialogFragment"-->
+<!--        android:name="com.example.foodtruck.profile.EditCommentDialogFragment"-->
 <!--        android:label="fragment_edit_comment"-->
 <!--        tools:layout="@layout/fragment_edit_comment_dialog">-->
 <!--        <argument-->
