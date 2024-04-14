@@ -13,7 +13,7 @@ object DatabaseInstance {
             val instance = Room.databaseBuilder(
                 context.applicationContext,
                 FoodTruckDatabase::class.java,
-                "bali_database"
+                "foodtruck_database"
             )
                 .fallbackToDestructiveMigration()
                 .build()

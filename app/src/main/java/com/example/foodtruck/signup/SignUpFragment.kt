@@ -61,8 +61,8 @@ class SignUpFragment : Fragment() {
             if (result == "Success") {
 //               findNavController().navigate(R.id.action_signupFragment_to_loginFragment)
                 Toast.makeText(requireContext(), result, Toast.LENGTH_SHORT).show()
-//                //val intent = Intent(requireActivity(), MainActivity::class.java)
-//                //startActivity(intent)
+               val intent = Intent(requireActivity(), MainActivity::class.java)
+               startActivity(intent)
             } else {
                 resetParameters()
 //                manageViews(
