@@ -59,7 +59,7 @@ class SignUpFragment : Fragment() {
     private fun observeSignUpResult() {
         signUpViewModel.signUpResult.observe(viewLifecycleOwner) { result: String ->
             if (result == "Success") {
-//               findNavController().navigate(R.id.action_signupFragment_to_loginFragment)
+//              findNavController().navigate(R.id.action_signupFragment_to_loginFragment)
                 Toast.makeText(requireContext(), result, Toast.LENGTH_SHORT).show()
                val intent = Intent(requireActivity(), MainActivity::class.java)
                startActivity(intent)
