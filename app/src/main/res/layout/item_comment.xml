@@ -19,8 +19,8 @@
 
 
         <TextView
-            android:id="@+id/placeNameTextView"
-            android:text="@string/the_place_name"
+            android:id="@+id/DishNameTextView"
+            android:text="@string/the_dish_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="22sp"

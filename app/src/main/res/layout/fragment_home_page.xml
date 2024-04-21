@@ -16,9 +16,9 @@
         android:padding="16dp" />
 
 
-    <!-- RecyclerView for the list of places -->
+    <!-- RecyclerView for the list of recipes -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewPlaces"
+        android:id="@+id/recyclerViewRecipes"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_below="@id/textViewAppName"

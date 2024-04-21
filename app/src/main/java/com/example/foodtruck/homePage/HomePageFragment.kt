@@ -12,10 +12,10 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.foodtruck.R
 import com.example.foodtruck.databinding.FragmentHomePageBinding
-import com.example.foodtruck.places.PlaceAdapter
+import com.example.foodtruck.recipes.RecipeAdapter
 import kotlinx.coroutines.launch
 
-class HomePageFragment : Fragment(), PlaceAdapter.PlaceClickListener {
+class HomePageFragment : Fragment(), RecipeAdapter.RecipeClickListener {
 
     private var _binding: FragmentHomePageBinding? = null
     private val binding get() = _binding!!
@@ -34,27 +34,27 @@ class HomePageFragment : Fragment(), PlaceAdapter.PlaceClickListener {
         super.onViewCreated(view, savedInstanceState)
 
         // Initialize your adapter
-        val placeAdapter = PlaceAdapter(this)
+        val recipeAdapter = RecipeAdapter(this)
 
         // Setup RecyclerView
-        binding.recyclerViewPlaces.apply {
-            adapter = placeAdapter
+        binding.recyclerViewRecipes.apply {
+            adapter = recipeAdapter
             layoutManager = LinearLayoutManager(context)
         }
 
         // Observe changes in the database and submit list to adapter
-        viewModel.places.observe(viewLifecycleOwner) { places ->
-            placeAdapter.submitList(places)
+        viewModel.recipes.observe(viewLifecycleOwner) { recipe ->
+            recipeAdapter.submitList(recipe)
         }
     }
 
-    override fun onAddCommentClicked(placeName: String) {
-        val bundle = bundleOf("placeName" to placeName)
+    override fun onAddCommentClicked(dishName: String) {
+        val bundle = bundleOf("dishName" to dishName)
         findNavController().navigate(R.id.action_homePageFragment_to_postFragment, bundle)
     }
 
-    override fun onViewCommentsClicked(placeName: String) {
-        val bundle = bundleOf("placeName" to placeName)
+    override fun onViewCommentsClicked(dishName: String) {
+        val bundle = bundleOf("dishName" to dishName)
         findNavController().navigate(R.id.action_homePageFragment_to_commentsFragment, bundle)
     }
 

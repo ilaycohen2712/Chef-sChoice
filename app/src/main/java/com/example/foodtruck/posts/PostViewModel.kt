@@ -19,7 +19,7 @@ class PostViewModel(application: Application) : AndroidViewModel(application) {
         userId: String,
         comment: String,
         photoUrl: String,
-        placeName: String,
+        dishName: String,
         onSuccess: () -> Unit,  // onSuccess lambda parameter
         onFailure: (Exception) -> Unit  // onFailure lambda parameter
     ) {
@@ -30,7 +30,7 @@ class PostViewModel(application: Application) : AndroidViewModel(application) {
                     userId = userId,
                     comment = comment,
                     photo = photoUrl,
-                    placeName = placeName
+                    dishName = dishName
                 )
 
                 // Insert the new post into the Room database

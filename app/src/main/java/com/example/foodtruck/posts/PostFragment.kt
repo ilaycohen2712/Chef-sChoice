@@ -44,8 +44,8 @@ class PostFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // Retrieve placeName from the arguments passed to this fragment
-        val placeName = arguments?.getString("placeName") ?: "Unknown"
+        // Retrieve dishName from the arguments passed to this fragment
+        val dishName = arguments?.getString("dishName") ?: "Unknown"
 
         binding.buttonChoosePhoto.setOnClickListener {
             // Launch the image picker
@@ -59,7 +59,7 @@ class PostFragment : Fragment() {
             selectedImageUri?.let { uri ->
                 if (userId != null && commentText.isNotEmpty()) {
                     uploadImageToFirebaseStorage(uri) { photoUrl ->
-                        viewModel.createPost(userId, commentText, photoUrl, placeName ?: "Unknown",
+                        viewModel.createPost(userId, commentText, photoUrl, dishName ?: "Unknown",
                             onSuccess = {
                                 // Navigate back only on success
                                 findNavController().navigateUp()

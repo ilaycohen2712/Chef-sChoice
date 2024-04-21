@@ -20,11 +20,12 @@
         android:id="@+id/textViewAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="foodTruck"
-        android:textSize="24sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:text="foodTruck"
+        android:textColor="#4ACEFF"
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/labelComment"
@@ -33,7 +34,7 @@
         android:layout_below="@id/textViewAppName"
         android:layout_marginTop="33dp"
         android:gravity="right"
-        android:text="כתוב תגובה"
+        android:text="Write a comment"
         android:textSize="18sp" />
 
     <EditText
@@ -42,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/labelComment"
         android:layout_marginTop="15dp"
-        android:hint="הכנס את תגובתך כאן"
+        android:hint="Your comment should be here"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         android:paddingTop="12dp"
@@ -55,7 +56,7 @@
         android:layout_below="@id/inputComment"
         android:layout_marginTop="18dp"
         android:gravity="right"
-        android:text="העלאת תמונה"
+        android:text="Upload Image"
         android:textSize="18sp" />
 
     <ImageView
@@ -72,8 +73,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/imageViewUploadedPhoto"
         android:layout_marginTop="17dp"
+        android:backgroundTint="#4aceff"
         android:drawableLeft="@android:drawable/ic_menu_gallery"
-        android:text="בחר תמונה" />
+        android:text="Browse image" />
 
     <Button
         android:id="@+id/buttonSubmitComment"
@@ -81,7 +83,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonChoosePhoto"
         android:layout_marginTop="22dp"
-        android:text="הוסף תגובה ותמונה" />
+        android:backgroundTint="#4aceff"
+        android:text="Add comment" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

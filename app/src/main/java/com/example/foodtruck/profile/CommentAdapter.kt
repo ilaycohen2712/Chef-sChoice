@@ -32,7 +32,7 @@ class CommentAdapter(private val comments: List<Comment>) : RecyclerView.Adapter
         // Bind data to views
         fun bind(comment: Comment) {
             // Bind comment data to views in the layout
-            itemView.findViewById<TextView>(R.id.placeNameTextView).text = comment.placeName
+            itemView.findViewById<TextView>(R.id.DishNameTextView).text = comment.dishName
             itemView.findViewById<TextView>(R.id.commentTextView).text = comment.comment
             // Load image using Picasso or Glide
             Picasso.get().load(comment.photo).into(itemView.findViewById<ImageView>(R.id.photoImageView))

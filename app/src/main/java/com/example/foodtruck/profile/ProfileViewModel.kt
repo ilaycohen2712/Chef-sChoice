@@ -33,7 +33,7 @@ class ProfileViewModel : ViewModel() {
     private val currentUser = FirebaseAuth.getInstance().currentUser
 
     fun fetchUserComments() {
-        Log.d("TAG","hello")
+       // Log.d("TAG","hello")
         currentUser?.uid?.let { userId ->
             val commentsRef = database.getReference("posts").orderByChild("userId").equalTo(userId)
             commentsRef.addListenerForSingleValueEvent(object : ValueEventListener {

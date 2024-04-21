@@ -5,12 +5,12 @@
     app:startDestination="@id/homePageFragment">
 
     <fragment
-        android:id="@+id/placeFragment"
-        android:name="com.example.foodtruck.places.PlaceFragment"
-        android:label="fragment_place"
-        tools:layout="@layout/fragment_place">
+        android:id="@+id/recipeFragment"
+        android:name="com.example.foodtruck.recipes.RecipeFragment"
+        android:label="fragment_recipe"
+        tools:layout="@layout/fragment_recipe">
         <action
-            android:id="@+id/action_placeFragment_to_postFragment"
+            android:id="@+id/action_recipeFragment_to_postFragment"
             app:destination="@id/postFragment" />
     </fragment>
     <fragment
