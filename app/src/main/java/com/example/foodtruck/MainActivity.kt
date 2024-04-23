@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         // Setup the nav controller for use with the NavHostFragment
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
@@ -31,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
         // Example for BottomNavigationView
         // NavigationUI.setupWithNavController(binding.bottomNav, navController)
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

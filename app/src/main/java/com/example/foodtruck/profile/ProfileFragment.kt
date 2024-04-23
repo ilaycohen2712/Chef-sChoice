@@ -1,6 +1,8 @@
 package com.example.foodtruck.profile
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -10,6 +12,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
@@ -19,14 +24,20 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.foodtruck.R
 import com.example.foodtruck.Welcome
 import com.example.foodtruck.shared.SharedViewModel
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
+import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MarkerOptions
 import com.google.firebase.auth.FirebaseAuth
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 
-
-
-
-class ProfileFragment : Fragment() , CommentAdapter.EditClickListener, CommentAdapter.DeleteClickListener{
+class ProfileFragment : Fragment(), OnMapReadyCallback,
+    CommentAdapter.EditClickListener, CommentAdapter.DeleteClickListener {
 
     private val viewModel: ProfileViewModel by activityViewModels()
     private lateinit var commentRecyclerView: RecyclerView
@@ -36,6 +47,8 @@ class ProfileFragment : Fragment() , CommentAdapter.EditClickListener, CommentAd
     private lateinit var logoutButton: Button
     private lateinit var editProfileButton: ImageView
     private lateinit var auth: FirebaseAuth
+    private lateinit var googleMap: GoogleMap
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
 
     private var currentName: String? = null
     private var currentProfilePicUrl: String? = null
@@ -48,13 +61,22 @@ class ProfileFragment : Fragment() , CommentAdapter.EditClickListener, CommentAd
             R.layout.fragment_profile, container, false
         )
         profileImageView = view.findViewById(R.id.profileImageView)
-        nameTextView=view.findViewById(R.id.nameTextView)
-        emailTextView=view.findViewById(R.id.emailTextView)
-        logoutButton=view.findViewById(R.id.logoutButton)
-        editProfileButton=view.findViewById(R.id.editProfileButton)
+        nameTextView = view.findViewById(R.id.nameTextView)
+        emailTextView = view.findViewById(R.id.emailTextView)
+        logoutButton = view.findViewById(R.id.logoutButton)
+        editProfileButton = view.findViewById(R.id.editProfileButton)
         // Initialize RecyclerView
         commentRecyclerView = view.findViewById(R.id.userCommentRecyclerView)
         commentRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+
+        // Initialize the FusedLocationProviderClient
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
+
+        // Initialize the Google Map fragment
+        val mapFragment =
+            childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
+        mapFragment.getMapAsync(this)
+
         return view
     }
 
@@ -71,6 +93,7 @@ class ProfileFragment : Fragment() , CommentAdapter.EditClickListener, CommentAd
         editProfileButton.setOnClickListener {
             editProfile()
         }
+
         // Fetch and display profile photo
         val defaultPhotoResourceId = R.drawable.profile_photo_placeholder
         val defaultPhotoUri = Uri.parse("android.resource://${requireContext().packageName}/$defaultPhotoResourceId")
@@ -79,6 +102,50 @@ class ProfileFragment : Fragment() , CommentAdapter.EditClickListener, CommentAd
         viewModel.fetchUserName()
         viewModel.fetchUserEmail()
         viewModel.fetchUserComments()
+    }
+
+    override fun onMapReady(map: GoogleMap) {
+        googleMap = map
+
+        // Check if the app has permission to access the device's location
+        if (ContextCompat.checkSelfPermission(
+                requireContext(),
+                Manifest.permission.ACCESS_FINE_LOCATION
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+            // Request location permission
+            ActivityCompat.requestPermissions(
+                requireActivity(),
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                LOCATION_PERMISSION_REQUEST_CODE
+            )
+            return
+        }
+
+        // Enable My Location button and set its listener
+        googleMap.isMyLocationEnabled = true
+
+        // Get the last known location of the device
+        fusedLocationClient.lastLocation
+            .addOnSuccessListener { location ->
+                // Got last known location. In some rare situations this can be null.
+                if (location !== null) {
+                    val currentLatLng = LatLng(location.latitude, location.longitude)
+                    googleMap.addMarker(
+                        MarkerOptions().position(currentLatLng).title("Your Location")
+                    )
+                    googleMap.moveCamera(
+                        CameraUpdateFactory.newLatLngZoom(currentLatLng, DEFAULT_ZOOM)
+                    )
+                } else {
+                    // Handle null location
+                    Toast.makeText(
+                        requireContext(),
+                        "Could not get current location",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
     }
 
     private fun observeUserComments() {
@@ -106,7 +173,7 @@ class ProfileFragment : Fragment() , CommentAdapter.EditClickListener, CommentAd
             Log.d("TAG", "observeUserData: $name")
             // Update UI with user's name
             nameTextView.text = name
-            currentName=name
+            currentName = name
         }
 
         val userEmail = viewModel.fetchUserEmail()
@@ -114,15 +181,14 @@ class ProfileFragment : Fragment() , CommentAdapter.EditClickListener, CommentAd
         emailTextView.text = userEmail
     }
 
-
     private fun logoutUser() {
         auth.signOut()
         // navigate the user to welcome activity
         val intent = Intent(requireContext(), Welcome::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)
-
     }
+
     private fun editProfile() {
         val dialogFragment = EditProfileDialogFragment().apply {
             arguments = Bundle().apply {
@@ -136,11 +202,6 @@ class ProfileFragment : Fragment() , CommentAdapter.EditClickListener, CommentAd
     override fun onEditClick(position: Int) {
         // Retrieve the comment at the given position
         val comment = viewModel.userComments.value?.get(position)
-        // Open a dialog fragment to edit the comment
-//        comment?.let {
-//            val action = ProfileFragmentDirections.actionProfileFragmentToEditCommentDialogFragment(commentId = it.commentId)
-//            findNavController().navigate(action)
-//        }
         // Open a dialog fragment to edit the comment
         comment?.let {
             val args = Bundle().apply {
@@ -165,4 +226,8 @@ class ProfileFragment : Fragment() , CommentAdapter.EditClickListener, CommentAd
         }
     }
 
+    companion object {
+        private const val DEFAULT_ZOOM = 15f
+        private const val LOCATION_PERMISSION_REQUEST_CODE = 1001
+    }
 }
