@@ -58,6 +58,7 @@ class RecipeAdapter(private val clickListener: RecipeClickListener) : ListAdapte
             binding.textViewRecipeMaterials.text = recipe.materials
             binding.textViewRecipePreparation.text = recipe.preparation
 
+
             Picasso.get().invalidate(recipe.dishPhoto)
             Picasso.get()
                 .load(recipe.dishPhoto)
