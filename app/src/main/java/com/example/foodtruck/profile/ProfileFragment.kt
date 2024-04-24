@@ -3,6 +3,7 @@ package com.example.foodtruck.profile
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.location.Location
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -31,12 +32,15 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageException
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
 
-class ProfileFragment : Fragment(), OnMapReadyCallback,
+class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener,
     CommentAdapter.EditClickListener, CommentAdapter.DeleteClickListener {
 
     private val viewModel: ProfileViewModel by activityViewModels()
@@ -49,10 +53,14 @@ class ProfileFragment : Fragment(), OnMapReadyCallback,
     private lateinit var auth: FirebaseAuth
     private lateinit var googleMap: GoogleMap
     private lateinit var fusedLocationClient: FusedLocationProviderClient
-
+    private lateinit var lastLocation : Location
     private var currentName: String? = null
     private var currentProfilePicUrl: String? = null
 
+    companion object {
+        private const val DEFAULT_ZOOM = 15f
+        private const val LOCATION_PERMISSION_REQUEST_CODE = 1001
+    }
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -65,17 +73,13 @@ class ProfileFragment : Fragment(), OnMapReadyCallback,
         emailTextView = view.findViewById(R.id.emailTextView)
         logoutButton = view.findViewById(R.id.logoutButton)
         editProfileButton = view.findViewById(R.id.editProfileButton)
-        // Initialize RecyclerView
         commentRecyclerView = view.findViewById(R.id.userCommentRecyclerView)
         commentRecyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        // Initialize the FusedLocationProviderClient
-        fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
 
-        // Initialize the Google Map fragment
-        val mapFragment =
-            childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
+        val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(requireActivity())
 
         return view
     }
@@ -106,46 +110,76 @@ class ProfileFragment : Fragment(), OnMapReadyCallback,
 
     override fun onMapReady(map: GoogleMap) {
         googleMap = map
-
-        // Check if the app has permission to access the device's location
-        if (ContextCompat.checkSelfPermission(
-                requireContext(),
-                Manifest.permission.ACCESS_FINE_LOCATION
-            ) != PackageManager.PERMISSION_GRANTED
-        ) {
-            // Request location permission
-            ActivityCompat.requestPermissions(
-                requireActivity(),
-                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
-                LOCATION_PERMISSION_REQUEST_CODE
-            )
+        googleMap.uiSettings.isZoomControlsEnabled = true
+        googleMap.setOnMarkerClickListener(this@ProfileFragment)
+        setupMap()
+    }
+    private fun setupMap() {
+        if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_PERMISSION_REQUEST_CODE)
             return
         }
 
-        // Enable My Location button and set its listener
         googleMap.isMyLocationEnabled = true
-
-        // Get the last known location of the device
-        fusedLocationClient.lastLocation
-            .addOnSuccessListener { location ->
-                // Got last known location. In some rare situations this can be null.
-                if (location !== null) {
-                    val currentLatLng = LatLng(location.latitude, location.longitude)
-                    googleMap.addMarker(
-                        MarkerOptions().position(currentLatLng).title("Your Location")
-                    )
-                    googleMap.moveCamera(
-                        CameraUpdateFactory.newLatLngZoom(currentLatLng, DEFAULT_ZOOM)
-                    )
-                } else {
-                    // Handle null location
-                    Toast.makeText(
-                        requireContext(),
-                        "Could not get current location",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                }
+        fusedLocationClient.lastLocation.addOnSuccessListener(requireActivity()) { location ->
+            if (location != null) {
+                lastLocation = location
+                val currentLatLng = LatLng(location.latitude, location.longitude)
+                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng, 12f))
+                addMarkers()
+            } else {
+                Toast.makeText(requireContext(), "Could not get current location", Toast.LENGTH_SHORT).show()
             }
+        }
+    }
+
+    private fun addMarkers() {
+        // Add a marker for Algorithmim
+        val location1 = LatLng(32.109333, 34.855499)
+        googleMap.addMarker(MarkerOptions().position(location1).title("Israel Farkash teacher of algo, Tel Aviv"))
+
+        // Add a marker for Rishon LeZion
+        val location2 = LatLng(31.9585, 34.8101)
+        googleMap.addMarker(MarkerOptions().position(location2).title("Moshe Cohen teacher of C/C++,jAVA,Rishon LeZion"))
+
+        // Add a marker for Jerusalem
+        val location3 = LatLng(31.7683, 35.2137)
+        googleMap.addMarker(MarkerOptions().position(location3).title("Yuval Cohen teacher of data structure, Jerusalem"))
+
+        // Add a marker for Modiin
+        val location4 = LatLng(31.8904, 35.0057)
+        googleMap.addMarker(MarkerOptions().position(location4).title("Chen Amrani teacher of Java,Modiin"))
+
+        // Add a marker for Ramat Gan
+        val location5 = LatLng(32.0853, 34.8119)
+        googleMap.addMarker(MarkerOptions().position(location5).title("Ori Farkash teacher of C++,Ramat Gan"))
+
+        // Add a marker for Petach Tikva
+        val location6 = LatLng(32.0869, 34.8878)
+        googleMap.addMarker(MarkerOptions().position(location6).title("Oren ShemTov teacher of Python,Petach Tikva"))
+
+        // Add a marker for Haifa
+        val location7 = LatLng(32.8054, 34.9721)
+        googleMap.addMarker(MarkerOptions().position(location7).title("Roy Ben Moshe teacher of Analiza, Haifa"))
+
+        // Add a marker for Ness Ziona
+        val location8 = LatLng(31.9503, 34.7881)
+        googleMap.addMarker(MarkerOptions().position(location8).title("Israel Israeli teacher of algo,Ness Ziona"))
+
+        // Add a marker for Holon
+        val location9 = LatLng(32.0097, 34.7746)
+        googleMap.addMarker(MarkerOptions().position(location9).title("Israel Farkash teacher of Computational models ,Holon"))
+
+        // Add a marker for Rosh HaAyin
+        val location10 = LatLng(32.0649, 34.9395)
+        googleMap.addMarker(MarkerOptions().position(location10).title("Israel Farkash teacher of Kotlin , Rosh HaAyin"))
+
+        // Add a marker for Beer Yaakov
+        val location11 = LatLng(31.9167, 34.7833)
+        googleMap.addMarker(MarkerOptions().position(location11).title("Israel Farkash teacher of C# ,Beer Yaakov"))
+
+        // Move the camera to the Rishon LeZion marker
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location2, 12f))
     }
 
     private fun observeUserComments() {
@@ -164,7 +198,7 @@ class ProfileFragment : Fragment(), OnMapReadyCallback,
                 .load(photoUrl)
                 .placeholder(R.drawable.profile_photo_placeholder) // Placeholder image while loading
                 .error(R.drawable.profile_photo_placeholder) // Image to show in case of error
-                .into(profileImageView as ImageView)
+                .into(profileImageView)
         }
     }
 
@@ -226,8 +260,21 @@ class ProfileFragment : Fragment(), OnMapReadyCallback,
         }
     }
 
-    companion object {
-        private const val DEFAULT_ZOOM = 15f
-        private const val LOCATION_PERMISSION_REQUEST_CODE = 1001
+
+    override fun onMarkerClick(marker: Marker): Boolean {
+        val countryName = marker.title
+        val bundle = Bundle().apply {
+            putString("countryName", countryName)
+        }
+        val profileFragment = ProfileFragment().apply {
+            arguments = bundle
+        }
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, profileFragment)
+            .addToBackStack(null)
+            .commit()
+        return true
     }
 }
+
+
