@@ -1,0 +1,599 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]" date="1713961385818" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 24/04/2024 15:22 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxRoomLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxRoomLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$VersionAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/8.4/checksums/checksums.lock" />
+    <option name="AFTER_PATH" value=".gradle/8.4/checksums/checksums.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/checksums.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$BundleAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxCoreLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxCoreLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_21_04_2024,_16_13_[Changes]1/buildOutputCleanup.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/buildOutputCleanup.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/checksums/sha1-checksums.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/sha1-checksums.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_21_04_2024,_16_13_[Changes]1/checksums.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/checksums1.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseStorageLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$FirebaseStorageLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PluginAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseStorageLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$FirebaseStorageLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$VersionAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayServicesLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PlayServicesLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PlayLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$BundleAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxEspressoLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxEspressoLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PlayLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_21_04_2024,_16_13_[Changes]1/executionHistory.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/executionHistory.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$VersionAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PlayLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_21_04_2024,_16_13_[Changes]1/executionHistory1.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/executionHistory1.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_21_04_2024,_16_13_[Changes]1/file-system.probe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/file-system.probe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$BundleAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$FirebaseLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$BundleAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$VersionAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$BundleAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseStorageLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$FirebaseStorageLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseStorageLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$FirebaseStorageLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_21_04_2024,_16_13_[Changes]1/dependencies-accessors.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/dependencies-accessors.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_21_04_2024,_16_13_[Changes]1/executionHistory.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/executionHistory.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayServicesLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PlayServicesLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PluginAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$BundleAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/checksums/md5-checksums.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/md5-checksums.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$GoogleLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseStorageLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$FirebaseStorageLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxRoomLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxRoomLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$VersionAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$FirebaseLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxEspressoLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxEspressoLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseStorageLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$FirebaseStorageLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PluginAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PlayLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$BundleAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$BundleAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxLibraryAccessors.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PlayLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayServicesLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PlayServicesLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxRoomLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$GoogleLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PluginAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_21_04_2024,_16_13_[Changes]1/fileHashes.lock" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/fileHashes.lock" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxEspressoLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxEspressoLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayServicesLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PlayServicesLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxEspressoLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxEspressoLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$FirebaseLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseStorageLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$FirebaseStorageLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxCoreLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxCoreLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayServicesLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PlayServicesLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PluginAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_21_04_2024,_16_13_[Changes]1/resourceHashesCache.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/resourceHashesCache.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$VersionAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$VersionAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$VersionAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$GoogleLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayServicesLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PlayServicesLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/8.4/dependencies-accessors/executionHistory.bin" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/executionHistory.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/executionHistory2.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PlayLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxRoomLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxRoomLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$FirebaseLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$FirebaseStorageLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$FirebaseStorageLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_21_04_2024,_16_13_[Changes]1/fileHashes.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/fileHashes.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$VersionAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$VersionAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$PlayServicesLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PlayServicesLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PluginAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibs$PluginAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$PluginAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$FirebaseLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$FirebaseLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PlayLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayServicesLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PlayServicesLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".idea/shelf/Uncommitted_changes_before_Checkout_at_21_04_2024,_16_13_[Changes]1/outputFiles.bin" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/outputFiles.bin" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxCoreLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxCoreLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxCoreLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxCoreLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxEspressoLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibs$AndroidxRoomLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$AndroidxRoomLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibs$GoogleLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibs$GoogleLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/b1a1ba1f2284b8356c9fd2a68472a7cc46c22a9a/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$AndroidxCoreLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/4dea2af1afe227f2f81d2b8ca7cace27f182148d/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$BundleAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$BundleAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/a895b4f8d30885a8a2cf737ee8aeb17bcef04499/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PlayLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PlayLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$GoogleLibraryAccessors3.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value=".gradle/8.4/dependencies-accessors/118545b3d234b64124256aedd60672f6ae1877fd/classes/org/gradle/accessors/dm/LibrariesForLibsInPluginsBlock$PluginAccessors.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_04_2024_15_22_[Changes]/LibrariesForLibsInPluginsBlock$PluginAccessors3.class" />
+  </binary>
+</changelist>
