@@ -13,7 +13,7 @@
             android:id="@+id/editTextProfileName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/profile_name_hint"
+            android:hint="Update full name"
             android:inputType="text"
             android:minHeight="48dp" />
 
@@ -29,9 +29,11 @@
             android:id="@+id/buttonSelectProfilePic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/select_profile_pic_button_text"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp" />
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#4dbde0"
+            android:text="select photo"
+            android:textColorLink="#4dbde0" />
 
     </LinearLayout>
 
