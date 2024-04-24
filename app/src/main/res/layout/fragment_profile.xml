@@ -40,12 +40,13 @@
                     android:id="@+id/editProfileButton"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
+                    android:layout_marginTop="80dp"
                     android:clickable="true"
                     android:contentDescription="@string/edit_profile_description"
                     android:focusable="true"
                     android:src="@drawable/update_icon"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.678"
+                    app:layout_constraintHorizontal_bias="0.691"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/profileImageView" />
 
@@ -93,7 +94,7 @@
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 android:textSize="20sp"
-                android:text="@string/my_comments"
+                android:text=" My Comments on the recipes"
                 android:layout_margin="10dp"/>
 
             <androidx.recyclerview.widget.RecyclerView
