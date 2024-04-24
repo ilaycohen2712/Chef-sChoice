@@ -31,21 +31,19 @@ class EditProfileDialogFragment : DialogFragment() {
     }
     private val viewModel: ProfileViewModel by activityViewModels()
 
-
-
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val inflater = LayoutInflater.from(requireContext())
         val view = inflater.inflate(R.layout.fragment_edit_profile_dialog, null)
 
         val editTextProfileName = view.findViewById<EditText>(R.id.editTextProfileName)
-         imageViewProfilePic = view.findViewById<ImageView>(R.id.imageViewProfilePic)
+        imageViewProfilePic = view.findViewById<ImageView>(R.id.imageViewProfilePic)
         val buttonSelectProfilePic = view.findViewById<Button>(R.id.buttonSelectProfilePic)
         val currentName = arguments?.getString("currentName")
         // Initialize pickImageContract
         pickImageContract = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
                 val data: Intent? = result.data
-                selectedImageUri= data?.data
+                selectedImageUri = data?.data
                 selectedImageUri?.let {
                     // Load and display the selected image in the ImageView using Picasso
                     Picasso.get().load(selectedImageUri).into(imageViewProfilePic)
@@ -53,9 +51,7 @@ class EditProfileDialogFragment : DialogFragment() {
             }
         }
 
-
         // Pre-fill the EditText field with the current name
-        Log.d("TAG","sharedViewModel.userMetaData.fullName: ${sharedViewModel.userMetaData.fullName}")
         editTextProfileName.setText(currentName)
 
         // Fetch and display the profile photo from ProfileViewModel
@@ -76,7 +72,10 @@ class EditProfileDialogFragment : DialogFragment() {
             pickImageContract.launch(intent)
         }
 
-        return MaterialAlertDialogBuilder(requireContext())
+        val positiveButtonColor = "#4dbde0"
+        val negativeButtonColor = "#4dbde0"
+
+        val dialog = MaterialAlertDialogBuilder(requireContext())
             .setTitle(R.string.edit_profile_dialog_title)
             .setView(view) // Set custom layout as dialog content view
             .setPositiveButton(R.string.save) { dialog, which ->
@@ -100,7 +99,13 @@ class EditProfileDialogFragment : DialogFragment() {
                 // Handle cancel button click
             }
             .create()
+
+        // Set text color for positive button
+        dialog.setOnShowListener {
+            dialog.getButton(Dialog.BUTTON_POSITIVE)?.setTextColor(android.graphics.Color.parseColor(positiveButtonColor))
+            dialog.getButton(Dialog.BUTTON_NEGATIVE)?.setTextColor(android.graphics.Color.parseColor(negativeButtonColor))
+        }
+
+        return dialog
     }
 }
-
-
