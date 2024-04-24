@@ -62,6 +62,9 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.6.2")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation(libs.firebase.storage.ktx)
+    implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
+    implementation(libs.androidx.compilerCommon)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -91,6 +94,10 @@ dependencies {
     implementation ("com.google.firebase:firebase-firestore:24.10.0")
     implementation ("com.firebaseui:firebase-ui-storage:8.0.2")
     implementation("com.google.firebase:firebase-auth:22.3.0")
+    implementation("com.google.android.gms:play-services-maps:18.0.0")
+    implementation("com.google.android.gms:play-services-location:18.0.0")
+
+
 
 }
 

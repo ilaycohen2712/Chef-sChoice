@@ -17,6 +17,9 @@ firebaseDatabase = "20.3.1"
 firebaseFirestore = "24.10.3"
 firebaseAuth = "22.3.1"
 firebaseStorageKtx = "20.3.0"
+playServicesMaps = "18.2.0"
+playServicesLocation = "21.2.0"
+compilercommon = "3.2.0-alpha11"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -35,6 +38,9 @@ firebase-database = { group = "com.google.firebase", name = "firebase-database",
 firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
 firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
 firebase-storage-ktx = { group = "com.google.firebase", name = "firebase-storage-ktx", version.ref = "firebaseStorageKtx" }
+play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
+androidx-compilerCommon = { group = "androidx.databinding", name = "compilerCommon", version.ref = "compilercommon" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

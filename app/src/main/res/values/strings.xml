@@ -36,4 +36,5 @@
     <string name="edit_comment_dialog_title">Edit comment</string>
     <string name="edit_profile_description">A pencil icon edit</string>
     <string name="for_background">For background</string>
+    <string name="my_map_api_key">AIzaSyDjr5dkOJVS9X346hUoBtk84XAJtRQDlWY</string>
 </resources>
