@@ -22,7 +22,7 @@ class Welcome : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
 
         // Initialize the Places SDK
-        Places.initialize(applicationContext, "{AIzaSyDjr5dkOJVS9X346hUoBtk84XAJtRQDlWY}")
+        Places.initialize(applicationContext, "AIzaSyDjr5dkOJVS9X346hUoBtk84XAJtRQDlWY")
 
         // Check if a user is already logged in using Firebase Authentication
         val currentUser = FirebaseAuth.getInstance().currentUser
