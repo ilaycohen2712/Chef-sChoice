@@ -21,6 +21,10 @@ interface RecipeDao {
     @Query("SELECT * FROM recipes WHERE name = :dishName")
     fun getRecipeById(dishName: String): LiveData<Recipe>
 
+    @Query("SELECT * FROM recipes WHERE name = :dishName")
+    fun getRecipeByName(dishName: String): LiveData<Recipe>
+
+
     @Update
     suspend fun updateRecipe(recipe: Recipe)
 

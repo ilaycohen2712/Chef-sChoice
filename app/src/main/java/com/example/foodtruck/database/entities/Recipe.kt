@@ -10,4 +10,5 @@ data class Recipe(
     val materials: String,
     val preparation: String,
     val dishPhoto: String,
+    val calories: Int
 )

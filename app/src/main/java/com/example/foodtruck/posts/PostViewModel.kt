@@ -36,6 +36,7 @@ class PostViewModel(application: Application) : AndroidViewModel(application) {
                 // Insert the new post into the Room database
                 val db = DatabaseInstance.getDatabase(getApplication<Application>())
                 val postDao = db.postDao()
+                Log.d("newPost",newPost.dishName)
                 postDao.insertPost(newPost)
 
                 // Insert the new post into Firebase and wait for completion

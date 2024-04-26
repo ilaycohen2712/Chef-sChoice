@@ -28,8 +28,20 @@ class RecipeFragment : Fragment() {
             viewModel.getRecipeById(recipeId).observe(viewLifecycleOwner) { recipe ->
                 recipe?.let {
                     binding.textViewDishName.text = it.name
-                    binding.textViewRecipeMaterials.text = it.materials
-                    binding.textViewRecipePreparation.text = it.preparation
+                    binding.textViewRecipeMaterials.text = buildString {
+                        append("Recipe materials: ")
+                        append( it.materials)
+                    }
+
+                    binding.textViewRecipePreparation.text = buildString {
+                        append("Recipe Preparation: ")
+                        append(it.preparation)
+                    }
+                    binding.textViewRecipeCalories.text = buildString {
+                        append(it.calories.toString())
+                        append("\nCalories")
+
+                    }
 
                 }
             }

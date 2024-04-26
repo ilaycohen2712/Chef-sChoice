@@ -22,7 +22,7 @@ class CommentsFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var commentAdapter: CommentAdapter
-    private lateinit var placeName: String
+    private lateinit var dishName: String
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         _binding = FragmentCommentsBinding.inflate(inflater, container, false)
@@ -32,8 +32,8 @@ class CommentsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        arguments?.getString("placeName")?.let { placeNameArg ->
-            placeName = placeNameArg
+        arguments?.getString("dishName")?.let { dishNameArg ->
+            dishName = dishNameArg
         }
 
         setupRecyclerView()
@@ -54,9 +54,9 @@ class CommentsFragment : Fragment() {
     }
 
     private fun fetchComments() {
-        Log.d("CommentsFragment", "Fetching comments for place: $placeName")
+        Log.d("CommentsFragment", "Fetching comments for dish: $dishName")
         val databaseReference = FirebaseDatabase.getInstance().reference.child("posts")
-        databaseReference.orderByChild("placeName").equalTo(placeName)
+        databaseReference.orderByChild("dishName").equalTo(dishName)
             .addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(dataSnapshot: DataSnapshot) {
                     val comments = dataSnapshot.children.mapNotNull {

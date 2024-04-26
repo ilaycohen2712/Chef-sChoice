@@ -9,28 +9,31 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 object Utils {
-    fun initializeDatabaseWithRecipe(application: Application, imageUrl: String, name: String, materials: String, preparation: String) {
-
+    fun initializeDatabaseWithRecipe(application: Application, imageUrl: String, name: String, materials: String, preparation: String, calories: Int) {
         val storageReference = FirebaseStorage.getInstance().getReference(imageUrl)
-        // Start the download of the URL
         storageReference.downloadUrl.addOnSuccessListener { downloadUri ->
             val imageUrl = downloadUri.toString()
-            // Directly use the imageUrl parameter
             val recipe = Recipe(
                 name = name,
                 materials = materials,
                 preparation = preparation,
-                dishPhoto = imageUrl
+                dishPhoto = imageUrl,
+                calories = calories,
             )
 
-            // Get your Room database and Dao
+            // Get your Room database and RecipeDao
             val db = DatabaseInstance.getDatabase(application)
             val recipeDao = db.recipeDao()
 
-            CoroutineScope(Dispatchers.IO).launch {
-                recipeDao.insertRecipe(recipe)
+            // Check if the recipe with the same name already exists
+            recipeDao.getRecipeByName(name).observeForever { existingRecipe ->
+                if (existingRecipe == null) {
+                    // Recipe doesn't exist, insert it into the database
+                    CoroutineScope(Dispatchers.IO).launch {
+                        recipeDao.insertRecipe(recipe)
+                    }
+                }
             }
         }
     }
-
 }

@@ -62,6 +62,7 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.6.2")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
     implementation(libs.firebase.storage.ktx)
+    implementation(libs.support.annotations)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -81,9 +82,14 @@ dependencies {
     annotationProcessor ("com.github.bumptech.glide:compiler:4.12.0")
 
     implementation ("com.squareup.picasso:picasso:2.71828")
+    implementation ("androidx.cardview:cardview:1.0.0")
+
 
     implementation ("androidx.navigation:navigation-fragment-ktx:2.3.0")
     implementation ("androidx.navigation:navigation-ui-ktx:2.3.0")
+    implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+
 
     implementation ("com.google.firebase:firebase-firestore-ktx:24.10.0")
     implementation ("com.google.firebase:firebase-storage:20.3.0")
@@ -93,6 +99,7 @@ dependencies {
     implementation("com.google.firebase:firebase-auth:22.3.0")
     implementation("com.google.android.gms:play-services-maps:18.0.0")
     implementation("com.google.android.gms:play-services-location:18.0.0")
+    implementation ("com.google.android.libraries.places:places:2.7.0")
 
 
 

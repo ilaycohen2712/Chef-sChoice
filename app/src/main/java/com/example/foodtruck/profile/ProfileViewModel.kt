@@ -13,6 +13,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.getValue
 import com.google.firebase.storage.FirebaseStorage
 import java.util.UUID
 
@@ -41,10 +42,10 @@ class ProfileViewModel : ViewModel() {
                     val commentsList = mutableListOf<Comment>()
                     for (commentSnapshot in snapshot.children) {
                         val commentId = commentSnapshot.key ?: ""
-                        val placeName = commentSnapshot.child("placeName").getValue(String::class.java) ?: ""
                         val commentText = commentSnapshot.child("comment").getValue(String::class.java) ?: ""
+                        val dishName = commentSnapshot.child("dishName").getValue(String::class.java) ?: ""
                         val photoUrl = commentSnapshot.child("photo").getValue(String::class.java) ?: ""
-                        val comment = Comment(commentId,placeName, commentText, photoUrl)
+                        val comment = Comment(commentId,commentText, photoUrl, dishName)
                         commentsList.add(comment)
                     }
                     Log.d("TAG","commentsList:$commentsList")

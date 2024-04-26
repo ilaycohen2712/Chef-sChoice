@@ -20,6 +20,7 @@ firebaseStorageKtx = "20.3.0"
 playServicesMaps = "18.2.0"
 playServicesLocation = "21.2.0"
 compilercommon = "3.2.0-alpha11"
+supportAnnotations = "28.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -41,6 +42,7 @@ firebase-storage-ktx = { group = "com.google.firebase", name = "firebase-storage
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
 play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
 androidx-compilerCommon = { group = "androidx.databinding", name = "compilerCommon", version.ref = "compilercommon" }
+support-annotations = { group = "com.android.support", name = "support-annotations", version.ref = "supportAnnotations" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

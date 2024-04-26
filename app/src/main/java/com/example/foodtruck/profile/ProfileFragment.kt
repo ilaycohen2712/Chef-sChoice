@@ -3,6 +3,7 @@ package com.example.foodtruck.profile
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.location.Geocoder
 import android.location.Location
 import android.net.Uri
 import android.os.Bundle
@@ -39,7 +40,7 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageException
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
-
+import java.io.IOException
 
 
 class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener,
@@ -66,7 +67,7 @@ class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickL
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val view: View = inflater.inflate(
             R.layout.fragment_profile, container, false
         )
@@ -126,8 +127,6 @@ class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickL
         fusedLocationClient.lastLocation.addOnSuccessListener(requireActivity()) { location ->
             if (location != null) {
                 lastLocation = location
-                val currentLatLng = LatLng(location.latitude, location.longitude)
-                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng, 12f))
                 addMarkers()
             } else {
                 Toast.makeText(requireContext(), "Could not get current location", Toast.LENGTH_SHORT).show()
@@ -137,16 +136,10 @@ class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickL
 
     private fun addMarkers() {
         // Add a marker for Algorithmim
-        val location1 = LatLng(32.109333, 34.855499)
-        googleMap.addMarker(MarkerOptions().position(location1).title("Hava's soup factory, Tel Aviv"))
-
-        // Add a marker for Rishon LeZion
-        val location2 = LatLng(31.9585, 34.8101)
-        googleMap.addMarker(MarkerOptions().position(location2).title("Eat with Hava,Rishon LeZion"))
-
-        // Add a marker for Jerusalem
-        val location3 = LatLng(31.7683, 35.2137)
-        googleMap.addMarker(MarkerOptions().position(location3).title("Hava's meat paradise, Jerusalem"))
+        val location1 = LatLng(31.990604,34.774915)
+        val marker = googleMap.addMarker(MarkerOptions().position(location1).title("Hava's soup factory, Rishon Lezion"))
+        val location2 = LatLng(31.9733044,34.7760967)
+        val marker2 = googleMap.addMarker(MarkerOptions().position(location2).title("Hava's desert paradise, Rishon Lezion"))
 
         // Move the camera to the Rishon LeZion marker
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location1, 12f))
@@ -231,18 +224,40 @@ class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickL
     }
 
 
+    private fun fetchFullAddress(marker: Marker) {
+        val location = marker.position
+        // Call your method to fetch the full address based on the marker's position
+        val fullAddress = fetchFullAddressFromGeocodingService(location)
+        // Set the full address as the snippet of the marker
+        marker.snippet = fullAddress
+    }
+    fun fetchFullAddressFromGeocodingService(latLng: LatLng): String {
+        val geocoder = Geocoder(requireContext())
+        var fullAddress = ""
+        try {
+            val addresses = geocoder.getFromLocation(latLng.latitude, latLng.longitude, 1)
+            if (addresses != null) {
+                if (addresses.isNotEmpty()) {
+                    val address = addresses[0]
+                    val addressParts = mutableListOf<String>()
+                    for (i in 0..address.maxAddressLineIndex) {
+                        addressParts.add(address.getAddressLine(i))
+                    }
+                    fullAddress = addressParts.joinToString(", ")
+                }
+            }
+        } catch (e: IOException) {
+            Log.e("ProfileFragment", "Error fetching address: ${e.message}")
+        }
+        return fullAddress
+    }
+
     override fun onMarkerClick(marker: Marker): Boolean {
-        val countryName = marker.title
-        val bundle = Bundle().apply {
-            putString("countryName", countryName)
-        }
-        val profileFragment = ProfileFragment().apply {
-            arguments = bundle
-        }
-        parentFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, profileFragment)
-            .addToBackStack(null)
-            .commit()
+        // Fetch the full address for the clicked marker
+        fetchFullAddress(marker)
+        // Show the info window for the clicked marker
+        marker.showInfoWindow()
+        // Return true to indicate that we have handled the click event
         return true
     }
 }

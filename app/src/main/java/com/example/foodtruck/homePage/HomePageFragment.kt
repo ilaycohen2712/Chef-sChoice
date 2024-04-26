@@ -30,6 +30,7 @@ class HomePageFragment : Fragment(), RecipeAdapter.RecipeClickListener {
         //return inflater.inflate(R.layout.fragment_home_page, container, false)
     }
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

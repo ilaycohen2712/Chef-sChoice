@@ -5,12 +5,11 @@
     android:layout_height="match_parent">
 
     <!-- Application name at the top -->
-    <TextView
-        android:id="@+id/textViewAppName"
+    <ImageView
+        android:id="@+id/imageViewLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Food Truck"
-        android:textSize="24sp"
+        android:src="@drawable/default_monochrome_black"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:padding="16dp" />
@@ -21,7 +20,7 @@
         android:id="@+id/recyclerViewRecipes"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_below="@id/textViewAppName"
+        android:layout_below="@id/imageViewLogo"
         android:layout_above="@+id/navigationBarFragment"
         android:padding="8dp" />
 
