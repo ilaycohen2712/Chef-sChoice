@@ -3,6 +3,7 @@ package com.example.foodtruck.profile
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.location.Geocoder
 import android.location.Location
 import android.net.Uri
 import android.os.Bundle
@@ -34,19 +35,12 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
-import com.google.android.libraries.places.api.Places
-import com.google.android.libraries.places.api.Places.*
-import com.google.android.libraries.places.api.model.Place
-import com.google.android.libraries.places.api.model.TypeFilter
-import com.google.android.libraries.places.api.net.FetchPlaceRequest
-import com.google.android.libraries.places.api.net.FindCurrentPlaceRequest
-import com.google.android.libraries.places.api.net.PlacesClient
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageException
 import com.squareup.picasso.Picasso
 import de.hdodenhof.circleimageview.CircleImageView
-
+import java.io.IOException
 
 
 class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickListener,
@@ -65,13 +59,13 @@ class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickL
     private lateinit var lastLocation : Location
     private var currentName: String? = null
     private var currentProfilePicUrl: String? = null
-    private lateinit var placesClient: PlacesClient
 
     companion object {
         private const val DEFAULT_ZOOM = 15f
         private const val LOCATION_PERMISSION_REQUEST_CODE = 1001
     }
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         val view: View = inflater.inflate(
@@ -115,7 +109,6 @@ class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickL
         viewModel.fetchUserName()
         viewModel.fetchUserEmail()
         viewModel.fetchUserComments()
-        placesClient = createClient(this.requireContext())
     }
 
     override fun onMapReady(map: GoogleMap) {
@@ -134,8 +127,6 @@ class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickL
         fusedLocationClient.lastLocation.addOnSuccessListener(requireActivity()) { location ->
             if (location != null) {
                 lastLocation = location
-                val currentLatLng = LatLng(location.latitude, location.longitude)
-                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng, 12f))
                 addMarkers()
             } else {
                 Toast.makeText(requireContext(), "Could not get current location", Toast.LENGTH_SHORT).show()
@@ -144,31 +135,14 @@ class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickL
     }
 
     private fun addMarkers() {
-        searchPlaceAndGetId("Hava's soup factory") { placeId1 ->
-            val location1 = LatLng(32.109333, 34.855499)
-            val marker1 = googleMap.addMarker(MarkerOptions().position(location1).title("Hava's soup factory, Tel Aviv"))
-            if (marker1 != null) {
-                marker1.tag = "place1"
-            }
+        // Add a marker for Algorithmim
+        val location1 = LatLng(31.990604,34.774915)
+        val marker = googleMap.addMarker(MarkerOptions().position(location1).title("Hava's soup factory, Rishon Lezion"))
+        val location2 = LatLng(31.9733044,34.7760967)
+        val marker2 = googleMap.addMarker(MarkerOptions().position(location2).title("Hava's desert paradise, Rishon Lezion"))
 
-            searchPlaceAndGetId("Eat with Hava") { placeId2 ->
-                val location2 = LatLng(31.9585, 34.8101)
-                val marker2 = googleMap.addMarker(MarkerOptions().position(location2).title("Eat with Hava, Rishon LeZion"))
-                if (marker2 != null) {
-                    marker2.tag = "place2"
-                }
-
-                searchPlaceAndGetId("Hava's meat paradise") { placeId3 ->
-                    val location3 = LatLng(31.7683, 35.2137)
-                    val marker3 = googleMap.addMarker(MarkerOptions().position(location3).title("Hava's meat paradise, Jerusalem"))
-                    if (marker3 != null) {
-                        marker3.tag = "place3"
-                    }
-
-                    googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location1, 12f))
-                }
-            }
-        }
+        // Move the camera to the Rishon LeZion marker
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location1, 12f))
     }
 
     private fun observeUserComments() {
@@ -250,51 +224,41 @@ class ProfileFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMarkerClickL
     }
 
 
-    override fun onMarkerClick(marker: Marker): Boolean {
-        val placeId = marker.tag as String // assuming you set the place ID as the marker's tag
-        val placeFields = listOf(Place.Field.NAME, Place.Field.ADDRESS, Place.Field.OPENING_HOURS)
-
-        placesClient.fetchPlace(FetchPlaceRequest.newInstance(placeId, placeFields))
-            .addOnSuccessListener { response ->
-                val place = response.place
-                val name = place.name
-                val address = place.address
-                val openingHours = place.openingHours?.weekdayText?.joinToString("\n") ?: "Opening hours not available"
-
-                val placeDetailsFragment = PlaceDetailsFragment.newInstance(name, address, openingHours)
-                parentFragmentManager.beginTransaction()
-                    .add(R.id.fragment_container, placeDetailsFragment)
-                    .addToBackStack(null)
-                    .commit()
-            }
-            .addOnFailureListener { exception ->
-                Log.e("ProfileFragment", "Place details fetch failed: $exception")
-            }
-
-        return true
+    private fun fetchFullAddress(marker: Marker) {
+        val location = marker.position
+        // Call your method to fetch the full address based on the marker's position
+        val fullAddress = fetchFullAddressFromGeocodingService(location)
+        // Set the full address as the snippet of the marker
+        marker.snippet = fullAddress
     }
-    private fun searchPlaceAndGetId(query: String, callback: (String) -> Unit) {
-        val request = FindCurrentPlaceRequest.newInstance(listOf(Place.Field.ID, Place.Field.NAME))
-
-        if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            return
-        }
-
-        placesClient.findCurrentPlace(request)
-            .addOnSuccessListener { response ->
-                for (placeLikelihood in response.placeLikelihoods) {
-                    val place = placeLikelihood.place
-                    if (place.name?.contains(query, ignoreCase = true) == true) {
-                        place.id?.let { callback(it) }
-                        return@addOnSuccessListener
+    fun fetchFullAddressFromGeocodingService(latLng: LatLng): String {
+        val geocoder = Geocoder(requireContext())
+        var fullAddress = ""
+        try {
+            val addresses = geocoder.getFromLocation(latLng.latitude, latLng.longitude, 1)
+            if (addresses != null) {
+                if (addresses.isNotEmpty()) {
+                    val address = addresses[0]
+                    val addressParts = mutableListOf<String>()
+                    for (i in 0..address.maxAddressLineIndex) {
+                        addressParts.add(address.getAddressLine(i))
                     }
+                    fullAddress = addressParts.joinToString(", ")
                 }
-                callback("")
             }
-            .addOnFailureListener { exception ->
-                Log.e("ProfileFragment", "Place search failed: $exception")
-                callback("") // Error occurred
-            }
+        } catch (e: IOException) {
+            Log.e("ProfileFragment", "Error fetching address: ${e.message}")
+        }
+        return fullAddress
+    }
+
+    override fun onMarkerClick(marker: Marker): Boolean {
+        // Fetch the full address for the clicked marker
+        fetchFullAddress(marker)
+        // Show the info window for the clicked marker
+        marker.showInfoWindow()
+        // Return true to indicate that we have handled the click event
+        return true
     }
 }
 
