@@ -10,5 +10,5 @@ data class Post(
     val userId: String,
     val comment: String,
     val photo: String,
-    val dishName: String
+    val dishName: String,
 )

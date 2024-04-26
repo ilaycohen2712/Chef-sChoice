@@ -46,6 +46,7 @@ class PostFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         // Retrieve dishName from the arguments passed to this fragment
         val dishName = arguments?.getString("dishName") ?: "Unknown"
+        Log.d("dishName", "$dishName ! ")
 
         binding.buttonChoosePhoto.setOnClickListener {
             // Launch the image picker
@@ -55,11 +56,13 @@ class PostFragment : Fragment() {
         binding.buttonSubmitComment.setOnClickListener {
             val commentText = binding.inputComment.text.toString()
             val userId = getCurrentUserId()
+            Log.d("CheckComment",commentText)
+            Log.d("CheckComment",userId.toString())
 
             selectedImageUri?.let { uri ->
                 if (userId != null && commentText.isNotEmpty()) {
                     uploadImageToFirebaseStorage(uri) { photoUrl ->
-                        viewModel.createPost(userId, commentText, photoUrl, dishName ?: "Unknown",
+                        viewModel.createPost(userId, commentText, photoUrl, dishName,
                             onSuccess = {
                                 // Navigate back only on success
                                 findNavController().navigateUp()
@@ -72,10 +75,10 @@ class PostFragment : Fragment() {
                         )
                     }
                 } else {
-                    Toast.makeText(requireContext(), "הוסף תגובה", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(requireContext(), "Please write a comment", Toast.LENGTH_SHORT).show()
                 }
             } ?: run {
-                Toast.makeText(requireContext(), "בבקשה הוסף תמונה", Toast.LENGTH_SHORT).show()
+                Toast.makeText(requireContext(), "Please share your dish picture", Toast.LENGTH_SHORT).show()
             }
         }
 

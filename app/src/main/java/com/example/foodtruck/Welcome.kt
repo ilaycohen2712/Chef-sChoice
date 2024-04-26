@@ -33,7 +33,7 @@ class Welcome : AppCompatActivity() {
 
         Log.d("RECIPE", "Before initializing database with recipe")
 
-        Utils.initializeDatabaseWithRecipe(application, "dish_photos/lasagna.jpg", "lasagna", "cheese,tomatoes", "mix and put in the oven")
+        Utils.initializeDatabaseWithRecipe(application, "dish_photos/lasagna.jpg", "lasagna", "2 Tomatoes, 100g Cheese, 1 box of lasagna papers, pepper, salt, 4 large eggs, cottage cheese, pepper, salt, 4 large eggs, cottage cheese, pepper, salt, 4 large eggs, cottage cheese, pepper, salt, 4 large eggs, cottage cheese", "mix and put in the oven, mix and put in the oven, mix and put in the oven, mix and put in the oven", 750)
 
         Log.d("RECIPE", "After initializing database with recipe")
 

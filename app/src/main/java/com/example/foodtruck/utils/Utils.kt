@@ -9,7 +9,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 object Utils {
-    fun initializeDatabaseWithRecipe(application: Application, imageUrl: String, name: String, materials: String, preparation: String) {
+    fun initializeDatabaseWithRecipe(application: Application, imageUrl: String, name: String, materials: String, preparation: String,calories: Int) {
 
         val storageReference = FirebaseStorage.getInstance().getReference(imageUrl)
         // Start the download of the URL
@@ -20,7 +20,8 @@ object Utils {
                 name = name,
                 materials = materials,
                 preparation = preparation,
-                dishPhoto = imageUrl
+                dishPhoto = imageUrl,
+                calories = calories,
             )
 
             // Get your Room database and Dao

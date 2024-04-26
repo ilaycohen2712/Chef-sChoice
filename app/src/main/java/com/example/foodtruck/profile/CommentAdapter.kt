@@ -1,5 +1,6 @@
 package com.example.foodtruck.profile
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -32,6 +33,9 @@ class CommentAdapter(private val comments: List<Comment>) : RecyclerView.Adapter
         // Bind data to views
         fun bind(comment: Comment) {
             // Bind comment data to views in the layout
+            Log.d("commentProfileCheck","comment id: "+ comment.commentId)
+            Log.d("commentProfileCheck","comment text: "+ comment.comment)
+            Log.d("commentProfileCheck","comment dishName: "+ comment.dishName)
             itemView.findViewById<TextView>(R.id.DishNameTextView).text = comment.dishName
             itemView.findViewById<TextView>(R.id.commentTextView).text = comment.comment
             // Load image using Picasso or Glide
