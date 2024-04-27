@@ -9,7 +9,7 @@ import com.example.foodtruck.database.entities.Recipe
 import com.example.foodtruck.database.entities.Post
 import com.example.foodtruck.database.entities.User
 
-@Database(entities = [User::class, Recipe::class, Post::class], version = 8)
+@Database(entities = [User::class, Recipe::class, Post::class], version = 9)
 abstract class FoodTruckDatabase : RoomDatabase() {
     abstract fun userDao(): UserDao
     abstract fun recipeDao(): RecipeDao
