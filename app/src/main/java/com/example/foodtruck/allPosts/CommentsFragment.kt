@@ -68,8 +68,16 @@ class CommentsFragment : Fragment() {
                             null
                         }
                     }
-                    commentAdapter.submitList(comments)
-                    Log.d("CommentsFragment", "Found ${comments.size} comments")
+                    if (comments.isEmpty()) {
+                        // If there are no comments, display a message
+                        binding.noCommentsTextView.visibility = View.VISIBLE
+                        binding.commentsRecyclerView.visibility = View.GONE
+                    } else {
+                        binding.noCommentsTextView.visibility = View.GONE
+                        binding.commentsRecyclerView.visibility = View.VISIBLE
+                        commentAdapter.submitList(comments)
+                        Log.d("CommentsFragment", "Found ${comments.size} comments")
+                    }
                 }
 
                 override fun onCancelled(databaseError: DatabaseError) {
