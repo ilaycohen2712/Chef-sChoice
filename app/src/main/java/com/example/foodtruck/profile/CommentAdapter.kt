@@ -49,19 +49,30 @@ class CommentAdapter(private val comments: List<Comment>) : RecyclerView.Adapter
     }
 
     override fun onBindViewHolder(holder: CommentViewHolder, position: Int) {
-        holder.bind(comments[position])
-        // Set click listeners for edit and delete buttons
-        holder.itemView.findViewById<ImageButton>(R.id.editButton).setOnClickListener {
-            editClickListener?.onEditClick(position)
-        }
+        if (comments.isEmpty()) {
+            // Handle the case where there are no comments to display
+            holder.itemView.findViewById<TextView>(R.id.commentTextView).text = "You haven't commented yet"
+            holder.itemView.findViewById<ImageView>(R.id.photoImageView).setImageResource(R.drawable.placeholder_image) // Set a placeholder image or hide the ImageView
+            holder.itemView.findViewById<ImageButton>(R.id.editButton).visibility = View.GONE // Hide edit button
+            holder.itemView.findViewById<ImageButton>(R.id.deleteButton).visibility = View.GONE // Hide delete button
+        } else {
+            // Bind comment data if comments list is not empty
+            holder.bind(comments[position])
+            // Set click listeners for edit and delete buttons
+            holder.itemView.findViewById<ImageButton>(R.id.editButton).setOnClickListener {
+                editClickListener?.onEditClick(position)
+            }
 
-        holder.itemView.findViewById<ImageButton>(R.id.deleteButton).setOnClickListener {
-            deleteClickListener?.onDeleteClick(position)
+            holder.itemView.findViewById<ImageButton>(R.id.deleteButton).setOnClickListener {
+                deleteClickListener?.onDeleteClick(position)
+            }
         }
     }
 
     override fun getItemCount(): Int {
-        return comments.size
+        // If comments list is empty, return 1 for the placeholder
+        // Otherwise, return the size of the comments list
+        return if (comments.isEmpty()) 1 else comments.size
     }
 }
 
